@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    @keyframes gradientAnimation {
+        0%, 100% {
+            background-image: linear-gradient(45deg, #4caf50, #8bc34a, #cddc39);
+        }
+        5% {
+            background-image: linear-gradient(45deg, #58b855, #89c04a, #c6db39);
+        }
+        10% {
+            background-image: linear-gradient(45deg, #6dbd5a, #94c44b, #c1da39);
+        }
+        15% {
+            background-image: linear-gradient(45deg, #82c45e, #a0c94d, #bbd938);
+        }
+        20% {
+            background-image: linear-gradient(45deg, #96cb62, #adc14e, #b6d737);
+        }
+        25% {
+            background-image: linear-gradient(45deg, #aad366, #b9c950, #b1d636);
+        }
+        30% {
+            background-image: linear-gradient(45deg, #bedb6a, #c5d153, #acd235);
+        }
+        35% {
+            background-image: linear-gradient(45deg, #d2e36e, #d1d956, #a7cf34);
+        }
+        40% {
+            background-image: linear-gradient(45deg, #e6eb72, #dddf58, #a2cc33);
+        }
+        45% {
+            background-image: linear-gradient(45deg, #f9f376, #e9e55b, #9dc932);
+        }
+        50% {
+            background-image: linear-gradient(45deg, #cddc39, #f4ea5e, #98c631);
+        }
+        55% {
+            background-image: linear-gradient(45deg, #cddc39, #9dc932, #9dc932);
+        }
+        60% {
+            background-image: linear-gradient(45deg, #e6eb72, #dddf58, #a2cc33);
+        }
+        65% {
+            background-image: linear-gradient(45deg, #d2e36e, #d1d956, #a7cf34);
+        }
+        70% {
+            background-image: linear-gradient(45deg, #bedb6a, #c5d153, #acd235);
+        }
+        75% {
+            background-image: linear-gradient(45deg, #aad366, #b9c950, #b1d636);
+        }
+        80% {
+            background-image: linear-gradient(45deg, #96cb62, #adc14e, #b6d737);
+        }
+        85% {
+            background-image: linear-gradient(45deg, #82c45e, #a0c94d, #bbd938);
+        }
+        90% {
+            background-image: linear-gradient(45deg, #6dbd5a, #94c44b, #c1da39);
+        }
+        95% {
+            background-image: linear-gradient(45deg, #58b855, #89c04a, #c6db39);
+        }
+    }
+
+    .gradient-text {
+        background-image: linear-gradient(45deg, #4caf50, #8bc34a, #cddc39);
+        -webkit-background-clip: text;
+        color: transparent;
+        animation: gradientAnimation 2s infinite;
+    }
+</style>
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <!-- Include Tailwind CSS from CDN for simplicity -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('background.png')">
+    
+    <!-- Navbar -->
+    <div class="absolute top-0 left-0 w-full p-6 text-600">
+        <div class="container mx-5 flex justify-between items-center">
+            
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="flex space-x-9">
+                    <!-- Logo -->
+            <a href="index.html">
+                <img src="/logo.png" alt="Brand Logo" class="h-7 w-auto">
+            </a>
+                    <li><a href="index.html" class="hover:text-pink-300">Home</a></li>
+                    <li><a href="about.html" class="hover:text-pink-300">About</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- Centered Content -->
+    <div class="text-center p-4">
+        <h1 class="text-4xl font-bold mb-6">Welcome to <span class="gradient-text">Chameleon</span>.</h1>
+        <p class="text-xl mb-8">Optimize your resume for every job with Chameleon and supercharge your job hunt, today!</p>
+        <!-- Button linking to the Typeform URL -->
+        <!-- Chameleon Image and Button Container -->
+       <!-- Chameleon Image and Button Container -->
+       <div class="flex flex-col items-center relative w-max mx-auto">
+        <!-- Position the chameleon image just outside the top-left corner of the container -->
+        <img src="greenguy.png" alt="Chameleon" class="absolute left-9 top-0 transform -translate-x-full -translate-y-1/4 w-10 h-10">
+        
+        <!-- Button linking to the Typeform URL -->
+        <a href="https://2i5n5xtpj4i.typeform.com/to/Q8BwLheD" target="_blank" class="bg-green-700 hover:bg-pink-600 text-white py-2 px-6 rounded-full text-xl font-semibold">
+            Join the waitlist
+        </a>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="absolute bottom-0 left-0 w-full p-4 text-white">
+        <!-- ... (footer content) -->
+    </div>
+
+</body>
+
+</html>
