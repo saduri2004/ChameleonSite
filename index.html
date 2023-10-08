@@ -71,6 +71,14 @@
         color: transparent;
         animation: gradientAnimation 2s infinite;
     }
+    .rainbow-text {
+    font-size: 3rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 </style>
 
 
@@ -109,11 +117,12 @@
 
     <!-- Centered Content -->
     <div class="text-center p-4">
-        <h1 class="text-4xl font-bold mb-6">Welcome to <span class="gradient-text">Chameleon</span>.</h1>
-        <p class="text-xl mb-8">Optimize your resume for every job with Chameleon and supercharge your job hunt, today!</p>
+        <h1 class="text-4xl font-bold mb-6">Welcome to <div class="rainbow-text">Chameleon</div>.</h1>
+        <p class="text-xl mb-8">Instantly optimize your resume for every job application with Chameleon and supercharge your job hunt</p>
         <!-- Button linking to the Typeform URL -->
         <!-- Chameleon Image and Button Container -->
        <!-- Chameleon Image and Button Container -->
+
        <div class="flex flex-col items-center relative w-max mx-auto">
         <!-- Position the chameleon image just outside the top-left corner of the container -->
         <img src="greenguy.png" alt="Chameleon" class="absolute left-9 top-0 transform -translate-x-full -translate-y-1/4 w-10 h-10">
