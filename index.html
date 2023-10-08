@@ -3,73 +3,35 @@
 
 <style>
     @keyframes gradientAnimation {
-        0%, 100% {
-            background-image: linear-gradient(45deg, #4caf50, #8bc34a, #cddc39);
-        }
-        5% { 
-            background-image: linear-gradient(45deg, #58b855, #89c04a, #c6db39);
-        }
-        10% {
-            background-image: linear-gradient(45deg, #6dbd5a, #94c44b, #c1da39);
-        }
-        15% {
-            background-image: linear-gradient(45deg, #82c45e, #a0c94d, #bbd938);
-        }
-        20% {
-            background-image: linear-gradient(45deg, #96cb62, #adc14e, #b6d737);
-        }
-        25% {
-            background-image: linear-gradient(45deg, #aad366, #b9c950, #b1d636);
-        }
-        30% {
-            background-image: linear-gradient(45deg, #bedb6a, #c5d153, #acd235);
-        }
-        35% {
-            background-image: linear-gradient(45deg, #d2e36e, #d1d956, #a7cf34);
-        }
-        40% {
-            background-image: linear-gradient(45deg, #e6eb72, #dddf58, #a2cc33);
-        }
-        45% {
-            background-image: linear-gradient(45deg, #f9f376, #e9e55b, #9dc932);
-        }
-        50% {
-            background-image: linear-gradient(45deg, #cddc39, #f4ea5e, #98c631);
-        }
-        55% {
-            background-image: linear-gradient(45deg, #cddc39, #9dc932, #9dc932);
-        }
-        60% {
-            background-image: linear-gradient(45deg, #e6eb72, #dddf58, #a2cc33);
-        }
-        65% {
-            background-image: linear-gradient(45deg, #d2e36e, #d1d956, #a7cf34);
-        }
-        70% {
-            background-image: linear-gradient(45deg, #bedb6a, #c5d153, #acd235);
-        }
-        75% {
-            background-image: linear-gradient(45deg, #aad366, #b9c950, #b1d636);
-        }
-        80% {
-            background-image: linear-gradient(45deg, #96cb62, #adc14e, #b6d737);
-        }
-        85% {
-            background-image: linear-gradient(45deg, #82c45e, #a0c94d, #bbd938);
-        }
-        90% {
-            background-image: linear-gradient(45deg, #6dbd5a, #94c44b, #c1da39);
-        }
-        95% {
-            background-image: linear-gradient(45deg, #58b855, #89c04a, #c6db39);
-        }
+    0%, 100% {
+        background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
     }
+    14% {
+        background-image: linear-gradient(45deg, orange, yellow, green, blue, indigo, violet, red);
+    }
+    28% {
+        background-image: linear-gradient(45deg, yellow, green, blue, indigo, violet, red, orange);
+    }
+    42% {
+        background-image: linear-gradient(45deg, green, blue, indigo, violet, red, orange, yellow);
+    }
+    57% {
+        background-image: linear-gradient(45deg, blue, indigo, violet, red, orange, yellow, green);
+    }
+    71% {
+        background-image: linear-gradient(45deg, indigo, violet, red, orange, yellow, green, blue);
+    }
+    85% {
+        background-image: linear-gradient(45deg, violet, red, orange, yellow, green, blue, indigo);
+    }
+}
+
 
     .gradient-text {
         background-image: linear-gradient(45deg, #4caf50, #8bc34a, #cddc39);
         -webkit-background-clip: text;
         color: transparent;
-        animation: gradientAnimation 2s infinite;
+        animation: gradientAnimation 5s infinite;
     }
     .rainbow-text {
     font-size: 3rem;
@@ -117,7 +79,7 @@
 
     <!-- Centered Content -->
     <div class="text-center p-4">
-        <h1 class="text-4xl font-bold mb-6">Welcome to <div class="rainbow-text">Chameleon</div>.</h1>
+        <h1 class="text-4xl font-bold mb-6">Welcome to <span class="gradient-text">Chameleon</span>.</h1>
         <p class="text-xl mb-8">Instantly optimize your resume for every job application with Chameleon and supercharge your job hunt</p>
         <!-- Button linking to the Typeform URL -->
         <!-- Chameleon Image and Button Container -->
